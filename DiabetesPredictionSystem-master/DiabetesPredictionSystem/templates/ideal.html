@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ideal Conditions for Diabetes </title>
+<style>
+        body {
+            background-image: url("{% static 'DiabetesPrediction/images/CS.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+        .main{
+            position: fixed;
+            top: 1px;
+            left: 150px;
+            width: 550px;
+            background-color:#faecbe;
+            border-radius: 5px;
+            align-items: center;
+            padding: 5%;
+        }
+        h1{
+            color: #0086b3;
+            font-family: cursive;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input[type=submit]{
+            background-color: #ff4d6e;
+            border: 2px;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type=submit]{
+            background-color: #f05d91;
+            border: 2px;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div align="center" class="main">
+        <h1>Parameters:</h1>
+        <form action="result">
+            <ul type="circle">
+                <li><b>Glucose :</b><br>
+                Normal blood sugar levels are less than 100 mg/dL after not eating (fasting) for at
+                least eight hours. And they're less than 140 mg/dL two hours after eating. During
+                the day, levels tend to be at their lowest just before meals.</li><br>
+                <li><b>Blood pressure :</b><br>
+                    Ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg.
+                high blood pressure is considered to be 140/90mmHg or higher. low blood
+                pressure is considered to be 90/60mmHg or lower.</li><br>
+                <li><b>Skin thickness :</b><br>
+                Skin thickness is primarily determined by collagen content and is increased in insulin-dependent diabetes mellitus. We measured skin thickness in 66 IDDM patients aged 24–38 yr and investigated whether
+                it correlated with long-term glycemic control and the presence of certain diabetic complications.</li><br>
+                <li><b>Insulin level :</b><br>
+                1 hour after glucose administration18-276 mIU/L125-1917 pmol/L</li><br>
+                <li><b>BMI :</b><br>
+                A BMI of less than 18.5 means that a person is underweight. A BMI of
+                between 18.5 and 24.9 is ideal. A BMI of between 25 and 29.9 is
+                overweight. A BMI over 30 indicates obesity.</li><br>
+                <li><b>Diabetes pedigree function :</b><br>
+                    It utilizes information from a person’s family
+                    history to predict how diabetes will affect that individual.</li>
+            </ul>
+        </form>
+<form action = "home">
+    <input type= "submit" value = "Back To Main Page">
+</form>
+</div>
+</body>
+</html>

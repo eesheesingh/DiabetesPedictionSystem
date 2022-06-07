@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Know More</title>
+<style>
+        body {
+            background-image: url("{% static 'DiabetesPrediction/images/im1.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .main{
+            position: fixed;
+            top: 1px;
+            left: 250px;
+            width: 1000px;
+            background-color:#ffffff;
+            border-radius: 5px;
+            align-items: center;
+            padding: 2%;
+        }
+        h1{
+            color: #0086b3;
+            font-family: cursive;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input[type=submit]{
+            background-color: #ff4d6e;
+            border: 2px;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type=submit]{
+            background-color: #f05d91;
+            border: 2px;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+          }
+    </style>
+</head>
+<body>
+<div align="center" class="main">
+        <h1>Steps to Follow:</h1>
+        <form action="result">
+            <table style="background-color:#f7eec8">
+                <tr>
+                    <th>What To Do</th>
+                    <th>What Not To Do</th>
+                </tr>
+                <tr>
+                    <td>Keep monitoring sugar level.</td>
+                    <td>Avoid processed foods and meats as <br>they will be rich in salt and oil.</td>
+                </tr>
+                <tr>
+                    <td>Reduce the intake of carbohydrates.</td>
+                    <td>Restrict fried and fatty foods.</td>
+                </tr>
+                <tr>
+                    <td>Choose low glycemic index foods.</td>
+                    <td>Do not take full fat dairy products.</td>
+                </tr>
+                <tr>
+                    <td>Stick to your diet strictly which contains more fiber<br> intakes.<br></td>
+                    <td>Alcohol increases blood pressure and triglycerides<br> and heavy drinking weakens the heart.</td>
+                </tr>
+                <tr>
+                    <td>Exercise Regularly & Have Proper Hydration.</td>
+                    <td>Do not eat white bread, chips, and pastries,<br> which quickly increase blood sugar.</td>
+                </tr>
+                <tr>
+                    <td>Try Herbal Extracts such as Green Tea.</td>
+                    <td>Do not use artificial sweeteners beyond the<br> recommended quantity.</td>
+                </tr>
+                <tr>
+                    <td>Manage Your Stress.</td>
+                    <td>Do not eat white bread, chips, and pastries, <br>which quickly increase blood sugar.</td>
+                </tr>
+                <tr>
+                    <td>Get Enough Sleep.</td>
+                    <td>Do not exercise on empty or full stomach.</td>
+                </tr>
+                <tr>
+                    <td>Healthy Weight.</td>
+                    <td>Do not smoke & Do not miss your medication.</td>
+                </tr>
+            </table>
+
+        </form>
+
+    <a href="https://en.wikipedia.org/wiki/Diabetes">Know More About Diabetes</a>
+    <form action = "home">
+    <input type= "submit" value = "Back To Main Page">
+    </form>
+</div>
+</body>
+</html>
